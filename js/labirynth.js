@@ -12,9 +12,9 @@ export function init() {
     canvas1.addEventListener('mousemove', stretchwall, false);
     canvas1.addEventListener('mouseup', finish, false);
     window.addEventListener('keydown', getKeyAndMove, false);
-    const sf = document.getElementById("sf");
+    const sf = document.getElementsByName("sf")[0];
     sf.onsubmit = savewalls;
-    const gf = document.getElementById("gf");
+    const gf = document.getElementsByName("gf")[0];
     gf.onsubmit = getwalls;
     drawall();
 }
