@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zbuduj i przejdź labirynt</title>
+</head>
+<script type="module">
+    import {init} from './js/labirynth.js'; window.onload = init;
+</script>
+
+<body>
+    <canvas id="canvas" width="900" height="350">
+        ble
+    </canvas>
+    <br/> Wciśnij przycisk, przeciągnij w celu narysowania ściany. Użyj klawiszy strzałek do przesuwania pionka<br/> Inne klawisze służą do wprowadzenia nazwy labiryntu do zapisu lub odczytu.
+    <form name="sf">
+        W celu zapisania labiryntu wpisz nazwę i kliknij przycisk Zapisz. <br/> Nazwa: <input name="slname" value="maze_name" type="text">
+        <input type="submit" value="Zapisz">
+    </form>
+    <form name="gf">
+        W celu wczytaniazapisanego labiryntu wpisz nazwę i kliknij przycisk Wczytaj. <br/>
+        <input type="glname" value="maze_name" type="text">
+        <input type="submit" value="Wczytaj">
+    </form>
+</body>
+
+
+</html>
