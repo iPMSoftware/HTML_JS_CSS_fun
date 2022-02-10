@@ -44,6 +44,10 @@ function drawballer() {
 
 var direction = "left";
 
+const directions = new Map();
+directions.set("left", 10);
+directions.set("right", -10);
+
 function moveballer() {
     var changeDirection = false;
     if (this.sx + this.borderRight >= 800) {
@@ -52,13 +56,8 @@ function moveballer() {
     if (this.sx - this.borderLeft <= 0) {
         direction = "left";
     }
-    if (direction == "left") {
-        this.sx += 10;
-    }
-    if (direction == "right") {
-        this.sx -= 10;
-    }
 
+    this.sx += directions.get(direction);
     //if(this.sx - this.borderLeft >= 0) {}
 
 }
