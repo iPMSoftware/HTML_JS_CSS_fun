@@ -1,2 +1,3 @@
 # HTML_JS_CSS_fun
-This project contains some basics of HTML/JS/CSS. 
+Aim of this project is to implement simple arkanoid like game using HTML5 Canvas
+
